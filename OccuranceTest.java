@@ -12,7 +12,6 @@ public class OccuranceTest {
         int n = arr.length;
 
         for (int j : arr) {
-
             if (res.containsKey(j)) {
                 res.put(j, res.get(j) + 1);
             } else {
