@@ -11,17 +11,22 @@ public class StringCountTest {
 
         //group by the number of characters in each string
 
-        Map<Integer, Integer> res = new HashMap<>();
-        for(String j : str) {
-            if(res.containsKey(j.length())) {
-                res.put(j.length(), res.get(j.length())+1);
-            }
-            else {
-                res.put(j.length(), 1);
-            }
-        }
-        for(Map.Entry<Integer, Integer> i : res.entrySet()) {
-            System.out.println("String with "+i.getKey()+" characters : "+i.getValue());
-        }
+//        Map<Integer, Integer> res = new HashMap<>();
+//        for(String j : str) {
+//            if(res.containsKey(j.length())) {
+//                res.put(j.length(), res.get(j.length())+1);
+//            }
+//            else {
+//                res.put(j.length(), 1);
+//            }
+//        }
+//        for(Map.Entry<Integer, Integer> i : res.entrySet()) {
+//            System.out.println("String with "+i.getKey()+" characters : "+i.getValue());
+//        }
+
+        Arrays.stream(str).collect(Collectors.groupingBy(String::length, Collectors.counting()))
+                .forEach((a,b) -> {
+                    System.out.println("String with "+a+" characters : "+b);
+                });
     }
 }
