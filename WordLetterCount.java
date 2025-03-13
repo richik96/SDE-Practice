@@ -13,7 +13,8 @@ public class WordLetterCount {
 
         for(String s : resList) {
             System.out.println(s);
-            Map<Character, Long> charCount = s.chars().mapToObj(c -> (char) c)
+            Map<Character, Long> charCount = s.chars()
+                    .mapToObj(c -> (char) c)
                     .collect(Collectors.groupingBy(Function.identity(), Collectors.counting()));
             //System.out.println(charCount);
 
