@@ -20,7 +20,7 @@ public class ProductsTest {
         Map<String, Integer> result = res.entrySet()
                 .stream()
                 .filter(x -> x.getValue()>threshold)
-                .sorted(Comparator.comparing(x -> x.getValue()))
+                .sorted(Comparator.comparing(Map.Entry::getValue))
                 .collect(Collectors.toMap(
                         Map.Entry::getKey,
                         Map.Entry::getValue,
