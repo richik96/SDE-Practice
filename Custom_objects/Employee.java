@@ -1,4 +1,4 @@
-
+package Custom_objects;
 
 public class Employee {
 
@@ -16,7 +16,7 @@ public class Employee {
 
     @Override
     public String toString() {
-        return "Employee{" +
+        return "Custom_objects.Employee{" +
                 "id=" + id +
                 ", salary=" + salary +
                 ", department='" + department + '\'' +

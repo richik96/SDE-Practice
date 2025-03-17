@@ -1,8 +1,7 @@
+package Custom_objects;
+
 import java.util.*;
 import java.util.stream.Collectors;
-
-import static java.util.stream.Collectors.collectingAndThen;
-import static java.util.stream.Collectors.toSet;
 
 public class TestClass3 {
 
@@ -40,6 +39,6 @@ public class TestClass3 {
         System.out.println("Average for each department : "+res);
         System.out.println("3rd highest salary : "+sal.get());
         System.out.println("2nd highest from each department : "+dept);
-        System.out.println("Employee with minimum salary : "+minSal);
+        System.out.println("Custom_objects.Employee with minimum salary : "+minSal);
     }
 }

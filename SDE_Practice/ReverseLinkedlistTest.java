@@ -1,4 +1,4 @@
-import java.util.Stack;
+package SDE_Practice;
 
 public class ReverseLinkedlistTest {
 
@@ -19,9 +19,9 @@ public class ReverseLinkedlistTest {
         printList(head);
     }
 
-//    static Node reverseList(Node head) {
-//        Stack<Node> stack = new Stack<>();
-//        Node temp = head;
+//    static SDE_Practice.Node reverseList(SDE_Practice.Node head) {
+//        Stack<SDE_Practice.Node> stack = new Stack<>();
+//        SDE_Practice.Node temp = head;
 //
 //        while(temp != null) {
 //            stack.push(temp);
