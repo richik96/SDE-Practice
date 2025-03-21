@@ -1,4 +1,4 @@
-package SDE_Practice;
+package SDE_Practice.Reverse;
 
 public class ReverseStringBitwise {
 
