@@ -18,7 +18,8 @@ class TestClass1 {
 
         //using stream api
         List<String> words = List.of(wordsList);
-        Map<String, Long> wordCountStream = words.stream().collect(Collectors.groupingBy(word -> word, Collectors.counting()));
+        Map<String, Long> wordCountStream = words.stream()
+                .collect(Collectors.groupingBy(word -> word, Collectors.counting()));
         System.out.println(wordCountStream);
     }
 }

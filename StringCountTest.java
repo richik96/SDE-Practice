@@ -24,7 +24,8 @@ public class StringCountTest {
 //            System.out.println("String with "+i.getKey()+" characters : "+i.getValue());
 //        }
 
-        Arrays.stream(str).collect(Collectors.groupingBy(String::length, Collectors.counting()))
+        Arrays.stream(str)
+                .collect(Collectors.groupingBy(String::length, Collectors.counting()))
                 .forEach((a,b) -> {
                     System.out.println("String with "+a+" characters : "+b);
                 });
