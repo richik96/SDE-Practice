@@ -34,5 +34,13 @@ public class EmployeeTest1 {
         System.out.println("with custom comparator :\t");
         emp.stream().sorted(customComparator)
                 .forEach(System.out::println);
+
+        //increase employee salary by 2000 for employee who are earning <70000
+
+        System.out.println("After increasing the salary :");
+        emp.stream().filter(e -> e.getSalary()<70000)
+                .map(e -> e.getSalary()+2000)
+                .toList()
+                .forEach(System.out::println);
     }
 }
