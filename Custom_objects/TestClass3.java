@@ -15,7 +15,8 @@ public class TestClass3 {
 
         Optional<Employee> sal = emp.stream().sorted(Comparator.comparing(Employee::getSalary)).skip(2).findFirst();
 
-        emp.stream().sorted((a, b) -> b.getAge()-a.getAge())
+        emp.stream()
+                .sorted((a, b) -> b.getAge()-a.getAge())
                 .skip(1)
                 .map(Employee::getAge)
                 .toList().forEach(System.out::println);
