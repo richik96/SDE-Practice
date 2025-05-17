@@ -1,6 +1,6 @@
 package SDE_Practice.LinkedList;
 
-import SDE_Practice.Reverse.Node;
+import SDE_Practice.LinkedList.Reverse.Node;
 
 
 public class SinglyLinkedList {

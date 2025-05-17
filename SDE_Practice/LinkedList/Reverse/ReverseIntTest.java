@@ -1,4 +1,4 @@
-package SDE_Practice.Reverse;
+package SDE_Practice.LinkedList.Reverse;
 
 public class ReverseIntTest {
 

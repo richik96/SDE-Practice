@@ -1,4 +1,4 @@
-package SDE_Practice.Reverse;
+package SDE_Practice.LinkedList.Reverse;
 
 public class ReverseStringBitwise {
 
@@ -6,9 +6,7 @@ public class ReverseStringBitwise {
 
 
         String str = "Hello";
-
         String reversed = resverseString(str);
-
         System.out.println(reversed);
     }
 

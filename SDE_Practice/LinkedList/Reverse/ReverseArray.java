@@ -1,4 +1,4 @@
-package SDE_Practice.Reverse;
+package SDE_Practice.LinkedList.Reverse;
 
 import java.util.Arrays;
 

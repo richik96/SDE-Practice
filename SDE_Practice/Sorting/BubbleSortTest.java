@@ -1,6 +1,8 @@
 package SDE_Practice.Sorting;
 
 import java.util.Arrays;
+import java.util.TreeSet;
+import java.util.stream.Collectors;
 
 public class BubbleSortTest {
 
@@ -12,6 +14,12 @@ public class BubbleSortTest {
         System.out.println();
         System.out.println("After sorting :");
         bubbleSort(nums);
+
+        System.out.println("Sorting using TreeSet :");
+        Arrays.stream(nums)
+                .boxed()
+                .collect(Collectors.toCollection(TreeSet::new))
+                .forEach(a -> System.out.print(a + " "));
     }
 
     static void bubbleSort(int[] num) {

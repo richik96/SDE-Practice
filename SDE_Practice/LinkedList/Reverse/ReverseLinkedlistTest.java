@@ -1,4 +1,4 @@
-package SDE_Practice.Reverse;
+package SDE_Practice.LinkedList.Reverse;
 
 public class ReverseLinkedlistTest {
 
@@ -19,9 +19,9 @@ public class ReverseLinkedlistTest {
         printList(head);
     }
 
-//    static SDE_Practice.Reverse.Node reverseList(SDE_Practice.Reverse.Node head) {
-//        Stack<SDE_Practice.Reverse.Node> stack = new Stack<>();
-//        SDE_Practice.Reverse.Node temp = head;
+//    static SDE_Practice.LinkedList.Reverse.Node reverseList(SDE_Practice.LinkedList.Reverse.Node head) {
+//        Stack<SDE_Practice.LinkedList.Reverse.Node> stack = new Stack<>();
+//        SDE_Practice.LinkedList.Reverse.Node temp = head;
 //
 //        while(temp != null) {
 //            stack.push(temp);
